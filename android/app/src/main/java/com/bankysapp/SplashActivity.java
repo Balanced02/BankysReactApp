@@ -1,4 +1,4 @@
-package com.bankysapp; // make sure this is right for you package.
+package com.bankysapp.app; // make sure this is right for you package.
 
 import android.content.Intent;
 import android.os.Bundle;
