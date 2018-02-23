@@ -1,4 +1,4 @@
-package com.bankysapp.app;
+package com.bankys.app;
 
 import android.app.Application;
 
