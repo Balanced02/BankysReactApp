@@ -30,18 +30,18 @@ export default class Academics extends Component {
             <Card >
               <CardItem>
                 <Icon active name="calendar" />
-                <Text>Calendar</Text>
+                <Text onPress={() => this.props.navigation.navigate("ComingSoon")} >Calendar</Text>
                 <Right>
-                  <Icon name="arrow-forward" />
+                  <Icon name="arrow-forward" onPress={() => this.props.navigation.navigate("ComingSoon")} />
                 </Right>
               </CardItem>
             </Card>
             <Card >
               <CardItem>
                 <Icon active name="calculator" />
-                <Text>Curriculum</Text>
+                <Text onPress={() => this.props.navigation.navigate("ComingSoon")}>Curriculum</Text>
                 <Right>
-                  <Icon name="arrow-forward" />
+                  <Icon name="arrow-forward" onPress={() => this.props.navigation.navigate("ComingSoon")} />
                 </Right>
               </CardItem>
             </Card>

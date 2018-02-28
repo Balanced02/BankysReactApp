@@ -25,7 +25,7 @@ export default class ContactForm extends Component {
     return (
       <View style={styles.background}  >
         <ScrollView>
-          <Heading title="Academics" {...this.props} />
+          <Heading title="Contact Us" {...this.props} />
           <Content style={{ padding: 10 }} >
             <Form>
               <Item floatingLabel >

@@ -30,18 +30,18 @@ export default class Extracurricular extends Component {
             <Card >
               <CardItem>
                 <Icon active name="ionic" />
-                <Text>Club Activities</Text>
+                <Text onPress={() => this.props.navigation.navigate("ComingSoon")}>Club Activities</Text>
                 <Right>
-                  <Icon name="arrow-forward" />
+                  <Icon name="arrow-forward" onPress={() => this.props.navigation.navigate("ComingSoon")} />
                 </Right>
               </CardItem>
             </Card>
             <Card >
               <CardItem>
                 <Icon active name="football" />
-                <Text>Sports</Text>
+                <Text onPress={() => this.props.navigation.navigate("ComingSoon")}>Sports</Text>
                 <Right>
-                  <Icon name="arrow-forward" />
+                  <Icon name="arrow-forward" onPress={() => this.props.navigation.navigate("ComingSoon")} />
                 </Right>
               </CardItem>
             </Card>

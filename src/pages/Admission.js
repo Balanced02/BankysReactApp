@@ -28,29 +28,29 @@ export default class Admissions extends Component {
           <Heading title="Academics" {...this.props} />
           <Content style={{ padding: 10 }} >
             <Card >
-              <CardItem>
+              <CardItem >
                 <Icon active name="ionic" />
-                <Text>Online Application</Text>
+                <Text onPress={() => this.props.navigation.navigate("ComingSoon")}>Online Application</Text>
                 <Right>
-                  <Icon name="arrow-forward" />
+                  <Icon name="arrow-forward" onPress={() => this.props.navigation.navigate("ComingSoon")} />
                 </Right>
               </CardItem>
             </Card>
             <Card >
               <CardItem>
                 <Icon active name="ionic" />
-                <Text>Download Form</Text>
+                <Text onPress={() => this.props.navigation.navigate("ComingSoon")}>Download Form</Text>
                 <Right>
-                  <Icon name="arrow-forward" />
+                  <Icon name="arrow-forward" onPress={() => this.props.navigation.navigate("ComingSoon")} />
                 </Right>
               </CardItem>
             </Card>
             <Card >
               <CardItem>
                 <Icon active name="ionic" />
-                <Text>Uniform Selection</Text>
+                <Text onPress={() => this.props.navigation.navigate("ComingSoon")}>Uniform Selection</Text>
                 <Right>
-                  <Icon name="arrow-forward" />
+                  <Icon name="arrow-forward" onPress={() => this.props.navigation.navigate("ComingSoon")} />
                 </Right>
               </CardItem>
             </Card>

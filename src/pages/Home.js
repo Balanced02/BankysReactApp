@@ -33,9 +33,9 @@ export default class Home extends Component {
 
   render() {
     return (
-      <ScrollView>
-        <Content style={styles.background} >
-          <Heading title="Bankys Private School" {...this.props} />
+      <View style={styles.background} >
+        <Heading title="Bankys Private School" {...this.props} />
+        <ScrollView>
           <View style={styles.containerStyle} >
             <Image source={require("../assets/imgs/bankys.jpg")} style={styles.imgStyle} />
           </View>
@@ -56,19 +56,19 @@ export default class Home extends Component {
             </Swiper>
           </View>
           <View style={styles.btnContainer} >
-            <CustomButton nav={'DrawerOpen'} title={"About Us"} {...this.props} styles={{ ...styles.btnStyle, ...styles.purpleBtn }} />
+            <CustomButton nav={'AboutUs'} title={"About Us"} {...this.props} styles={{ ...styles.btnStyle, ...styles.purpleBtn }} />
             <CustomButton nav={'Admissions'} title={"Admissions"} {...this.props} styles={{ ...styles.btnStyle, ...styles.yellowBtn }} />
           </View>
           <View style={styles.btnContainer} >
-            <CustomButton nav={'DrawerOpen'} title={"Career"} {...this.props} styles={{ ...styles.btnStyle, ...styles.greenBtn }} />
+            <CustomButton nav={'ComingSoon'} title={"Career"} {...this.props} styles={{ ...styles.btnStyle, ...styles.greenBtn }} />
             <CustomButton nav={'ELearning'} title={"E-Learning"} {...this.props} styles={{ ...styles.btnStyle, ...styles.purpleBtn }} />
           </View>
           <View style={styles.btnContainer} >
             <CustomButton nav={'ContactForm'} title={"Contact Us"} {...this.props} styles={{ ...styles.btnStyle, ...styles.yellowBtn }} />
-            <CustomButton nav={'DrawerOpen'} title={"What's New"} {...this.props} styles={{ ...styles.btnStyle, ...styles.greenBtn }} />
+            <CustomButton nav={'WhatsNew'} title={"What's New"} {...this.props} styles={{ ...styles.btnStyle, ...styles.greenBtn }} />
           </View>
-        </Content>
-      </ScrollView>
+        </ScrollView>
+      </View>
     )
   }
 }
@@ -108,7 +108,8 @@ const styles = {
     flex: 1
   },
   background: {
-    backgroundColor: "#FFF4CA"
+    backgroundColor: "#FFF4CA",
+    height: '100%'
   },
   info: {
     width: '70%',

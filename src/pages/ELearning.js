@@ -30,27 +30,27 @@ export default class ELearning extends Component {
             <Card >
               <CardItem>
                 <Icon active name="ionic" />
-                <Text>Assignment</Text>
+                <Text onPress={() => this.props.navigation.navigate("ComingSoon")}>Assignment</Text>
                 <Right>
-                  <Icon name="arrow-forward" />
+                  <Icon name="arrow-forward" onPress={() => this.props.navigation.navigate("ComingSoon")} />
                 </Right>
               </CardItem>
             </Card>
             <Card >
               <CardItem>
                 <Icon active name="ionic" />
-                <Text>Check Results</Text>
+                <Text onPress={() => this.props.navigation.navigate("ComingSoon")}>Check Results</Text>
                 <Right>
-                  <Icon name="arrow-forward" />
+                  <Icon name="arrow-forward" onPress={() => this.props.navigation.navigate("ComingSoon")} />
                 </Right>
               </CardItem>
             </Card>
             <Card >
               <CardItem>
                 <Icon active name="ionic" />
-                <Text>E-Classroom</Text>
+                <Text onPress={() => this.props.navigation.navigate("ComingSoon")}>E-Classroom</Text>
                 <Right>
-                  <Icon name="arrow-forward" />
+                  <Icon name="arrow-forward" onPress={() => this.props.navigation.navigate("ComingSoon")} />
                 </Right>
               </CardItem>
             </Card>

@@ -22,14 +22,7 @@ import AdmissionsScreen from './src/pages/Admission'
 import ELearningScreen from './src/pages/ELearning'
 import ExtracurricularScreen from './src/pages/Extracurricular'
 import ContactFormScreen from './src/pages/ContactForm'
-import ComingSoonScreen from './src/pages/ComingSoon'
 import TestimonialsScreen from './src/pages/Testimonials'
-import AboutUsScreen from './src/pages/AboutUs'
-import WhatsNewScreen from './src/pages/WhatsNew'
-
-import TechLaunchScreen from './src/subPages/TechLaunch'
-import Week7Screen from './src/subPages/Week7'
-import AppNavigator from './AppNavigator'
 
 // const instructions = Platform.select({
 //   ios: 'Press Cmd+R to reload,\n' +
@@ -50,38 +43,45 @@ const drawerComponent = (props) => (
 )
 
 
-const pageNavigation = StackNavigator({
-  MainNavigator: {
-    path: '/appNavigator',
-    screen: AppNavigator
+const pageNavigation = DrawerNavigator({
+  Home: {
+    path: '/',
+    screen: HomeScreen
   },
-  ComingSoon: {
-    path: '/comingSoon',
-    screen: ComingSoonScreen
+  Academics: {
+    path: '/academics',
+    screen: AcademicsScreen
   },
-  AboutUs: {
-    path: '/aboutUs',
-    screen: AboutUsScreen
+  Admissions: {
+    path: '/admissions',
+    screen: AdmissionsScreen
   },
-  WhatsNew: {
-    path: '/whatsNew',
-    screen: WhatsNewScreen,
+  ELearning: {
+    path: '/elearning',
+    screen: ELearningScreen
   },
-  TechLaunch: {
-    path: '/techLaunch',
-    screen: TechLaunchScreen
+  Extracurricular: {
+    path: '/extracurricular',
+    screen: ExtracurricularScreen
   },
-  Week7: {
-    path: '/week7',
-    screen: Week7Screen
-  }
+  ContactForm: {
+    path: '/contactScreen',
+    screen: ContactFormScreen
+  },
+  Testimonials: {
+    path: '/testimonials',
+    screen: TestimonialsScreen
+  },
 },
-
   {
-    initialRouteName: "MainNavigator",
-    headerMode: 'none'
+    initialRouteName: "Home",
+    drawerPosition: 'left',
+    drawerWidth: 250,
+    contentOptions: {
+      activeTintColor: 'red'
+    },
+    contentComponent: drawerComponent
   })
-
 
 export default pageNavigation
 
